@@ -130,13 +130,24 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-background" />
         </div>
-        <div className="relative container h-full flex flex-col justify-end pb-8">
-          <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-10 rounded bg-gold/20 flex items-center justify-center">
-              <Calculator className="w-5 h-5 text-gold" />
-            </div>
-            <div className="h-px flex-1 bg-gradient-to-r from-gold/40 to-transparent max-w-[200px]" />
+        <div className="relative container h-full flex flex-col justify-between pb-8">
+          {/* Logo */}
+          <div className="flex justify-center pt-6">
+            <img
+              src="/logo.webp"
+              alt="Anthony's Asphalt Logo"
+              className="h-16 sm:h-20 object-contain drop-shadow-lg"
+            />
           </div>
+          
+          {/* Title Section */}
+          <div>
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-10 h-10 rounded bg-gold/20 flex items-center justify-center">
+                <Calculator className="w-5 h-5 text-gold" />
+              </div>
+              <div className="h-px flex-1 bg-gradient-to-r from-gold/40 to-transparent max-w-[200px]" />
+            </div>
           <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-wide uppercase leading-tight">
             Asphalt Paving<br />
             <span className="text-gold gold-glow">Job Cost Calculator</span>
@@ -144,6 +155,7 @@ export default function Home() {
           <p className="mt-3 text-sm sm:text-base text-white/70 max-w-xl" style={{ fontFamily: "var(--font-body)" }}>
             Calculate accurate job pricing with 40% net margin protection. Input your costs, get your price.
           </p>
+          </div>
         </div>
       </header>
 
